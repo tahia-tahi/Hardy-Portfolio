@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 150px;
 }
 
 .menu{
@@ -41,11 +42,100 @@ nav{
 
 .menu_button{
     display: flex;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
+
+.btn-secondary{
+    background-color: #fd6f0a00;
+    color: #FD6E0A;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px 28px;
+    border: 1px solid #FD6E0A;
+    margin-left: 20px;
+}
+
+.hero_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px 0 150px;
+}
+
+
+
+.hero-left h4 {
+    color: rgba(71, 71, 71, 1);
+    font-size: 25px;
+   
+}
+
+.hero-left h1 {
+    color: rgba(24, 24, 24, 1);
+    font-size: 50px;
+}
+
+.hero-left p {
+    color: rgba(117, 117, 117, 1);
+    font-size: 12px;
+  
+}
+
+.hero-left{
+    max-width: 580px;
+}
+
+
+header {
+    background-image: url(Images/developer.png),url(Images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.info-div{
+    display: flex;
+justify-content: space-between;
+gap: 10px;
+align-items: center;
+}
+
+.intro-div p {
+    color: rgba(117, 117, 117, 1);
+    font-size: 14px;
+
+}
+
+
+ .info {
+   color: rgb(16, 15, 15);
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.about-me{
+   text-align: center;
+   padding: 40px 55px;
+   background-color: rgba(255, 248, 243, 1);
+   margin: 0 150px;
+   margin-top: 100px;
+
+}
+
+
+.what-I-do{
+    text-align: center;
+    padding: 40px 55px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 150px;
+    margin-top: 100px;
+ 
+ }
+
+
+
 
 
 /* /* shared style */
@@ -58,4 +148,135 @@ nav{
     border-radius: 5px;
     padding: 12px 28px;
     border: none;
+}
+
+
+.section-text{
+    font-size: 12px;
+    color: rgba(117, 117, 117, 1);
+    line-height: 20px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.summery-coloum-subtitle{
+    color:rgba(71, 71, 71, 1);
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.institute-time{
+    color: rgba(117, 117, 117, 1);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+.skillset {
+    padding: 10px;
+    border: 1px solid rgba(237, 237, 237, 0.756);
+}
+
+.parent-conatiner{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+    margin: 0 150px;
+}
+
+.edu_exp,footer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 100px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+
+.edu{
+    width: calc((100% - 100px)/2);
+}
+
+.summery{
+    margin-top: 50px;
+}
+
+.summery-button{
+    text-align: center;
+    margin-top: 70px;
+}
+form input {
+    padding: 10px 30px;
+    margin: 15px 0px;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width:576px) {
+
+    header {
+        background: none;
+    }
+
+    .hero_area, nav, .hero-left,.info-div,.parent-conatiner,footer{
+        flex-direction: column;
+    }
+
+  .hero-left,.edu_exp {
+    width: 100%;
+  }
+
+  .hero-left p{
+    font-size: 15px;
+  }
+
+  .hero_area,.parent-conatiner,.what-I-do,footer,.edu_exp{
+    margin: 0;
+    text-align: center;
+  }
+  .section-text{
+    font-size: 10px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .hero-image{
+    width:50%;
+    height: 50%;
+  }
+
+  .about-me,.parent-conatiner,.edu_exp{
+    padding: 0;
+    margin: 0;
+
+
+  }
+
+  button {
+  
+    font-size: 10px;
+    font-weight: normal;
+    
+}
+
+.skillset,.parent-conatiner {
+    width: auto;
+    padding: 0;
+
+}
+
 }
